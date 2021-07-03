@@ -1,0 +1,303 @@
+* 	{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: space-around;
+	justify-content: flex-end;
+	background: linear-gradient(to bottom, #83a4d4, #b6fbff)
+}
+
+nav ul li	{
+	font-weight: bold;
+	list-style: none;
+	display: inline-block;
+	margin: 10px;
+	line-height: 30px;
+}
+
+#FotoDePerfil {
+	margin: 1px;
+	justify-items: right;
+	border: 1px solid black;
+}
+
+
+.inicio	{
+	display: flex;
+	flex-direction: column;
+	line-height:1.5;
+	margin: 15px;
+	margin-top: 20px;
+}
+
+#foto	{
+	display: grid;
+	grid-template-columns: 50% 50% auto;
+	grid-row: 200px	700px auto;
+	line-height:1.5;
+	margin: 15px;
+}
+
+.titulo 	{
+	font-size: 40px;
+	font-weight: bold;
+	justify-items: left;
+}
+
+.subtitulo	{
+	font-size: 23px;
+	font-weight: bold;
+	justify-items: left;
+}
+
+p	{
+	font-size: 18px;
+	line-height: 1.2;
+}
+
+.educacion {
+margin-top: 20px;
+margin-bottom: 70px;
+margin-left: 20px;
+margin-right: 20px;
+
+}
+
+#SOBREMI	{
+	font-size: 18px;
+	line-height: 100px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 80px;
+	list-style-type: none;
+}
+
+.sobremi ul {
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: bold;
+	text-align: center;
+	list-style: none;
+}
+
+footer	{
+	font-size: 18px;
+	text-align: center;
+}
+
+
+/* Botones de navegación */
+.volver {
+	border: none;
+	min-width: 100px;
+	height: 30px;
+	padding: 0 30px;
+	color: #fff;
+	border-radius: 100px;
+	text-decoration: none;
+	display: inline-block;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #403CC2;
+	transition: .3s ease all;
+
+}
+
+.volver:hover {
+	background-color: #1B1881;
+	text-decoration: none;
+}
+
+/* Página de Contacto */
+
+
+.formulario {
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1.2;
+	margin: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+#fNombre {
+	margin: 20px;
+}
+
+/* CAJA DE TEXTO FORMULARIO REVISAR
+textarea{
+}
+*/
+.fFuente {
+	margin: 10px;
+	font-size: 15px;
+}
+
+#fBoton {
+	margin: 10px;
+	margin-bottom: 10px;
+}
+
+.Enviar {
+		border: none;
+		min-width: 100px;
+		height: 30px;
+		padding: 0 30px;
+		color: #fff;
+		border-radius: 100px;
+		text-decoration: none;
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #403CC2;
+		transition: .3s ease all;
+}
+
+.Enviar:hover {
+	background-color: #1B1881;
+	text-decoration: none;
+}
+
+.Borrar {
+	border: none;
+	min-width: 100px;
+	height: 30px;
+	padding: 0 30px;
+	color: #fff;
+	border-radius: 100px;
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #403CC2;
+	transition: .3s ease all;
+}
+
+.Borrar:hover {
+	background-color: #1B1881;
+	text-decoration: none;
+}
+
+/* Página Educación */
+
+.encabezado {
+	margin-top: 40px;
+}
+
+.encabezado p {
+	margin-left: 100px;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.gridEducacion {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	
+}
+
+.gridEducacion div {
+	margin: 10px;
+	grid-template-areas: 
+	"a a a b b b ";
+	margin-right: 60px;
+	margin-left: 60px;
+	margin-bottom: 50px;
+}
+
+.textoEducacion {
+	grid-area: a;
+	line-height: 1.6;
+}
+
+#Udesa {
+	width: 260px;
+	height: 180px;
+	grid-area: b;
+	justify-items: right;
+}
+
+#Udesa:hover {
+	transform: scale(1.2,1.2);
+}
+
+.gridIndex {
+	display: grid;
+	grid-template-columns: 1000px 100px;
+	line-height:1.5;
+	margin: 20px;
+	margin-top: 80px;
+}
+
+#ESCCP {
+	width: 170px;
+	height: 190px;
+	grid-area: b;
+	justify-items: right;
+	transform: scale(0.8,0.8);
+}
+
+#ESCCP:hover {
+	transform: scale(1.2,1.2);
+}
+
+/* Página Experiencia */
+
+.gridExperiencia {
+	display: grid;
+	grid-template-columns: 1000px 100px;
+	line-height:1.5;
+	margin: 15px;
+	margin-top: 10px;
+
+}
+
+.gridExperiencia div {
+	margin: 10px;
+	grid-gap: 2px;
+	grid-template-areas: 
+	"a a a b b b ";
+	margin-right: 65px;
+	margin-left: 65px;
+	margin-bottom: 50px;
+}
+
+.textoExperiencia {
+	grid-area: a;
+	line-height: 1.6;
+}
+
+#PwC {
+	width: 200px;
+	height: 190px;
+	grid-area: b;
+	justify-items: right;
+	transform: scale(1.2,1.2);
+}
+
+#Avon {
+	width: 180px;
+	height: 170px;
+	grid-area: b;
+	justify-items: right;
+	transform: scale(1.2,1.2);
+}
+
+#KPMG {
+	width: 180px;
+	height: 150px;
+	grid-area: b;
+	justify-items: right;
+	transform: scale(1.2,1.2);
+}

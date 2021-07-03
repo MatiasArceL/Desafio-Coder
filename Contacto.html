@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contáctame | Matías Arce</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head> 
+<!---->
+<body>
+	<header>
+		<nav>
+			<ul> 
+			  <li><a class="volver" href="index.html">Inicio</a></li>
+              <li><a class="volver" href="Experiencia.html">Experiencia<a></li>
+              <li><a class="volver" href="Educación.html">Educación</a></li>
+              <li><a class="volver" href="Portafolio.html">Portafolio</a></li>
+              <li><a class="volver" href="Contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+<!--Título de Sección Web-->
+<section class="inicio">
+	<h1 class="titulo"> Estemos en contacto</h1>
+	<h2 class="subtitulo">¿Querés conocerme mejor?¿Tenemos intereses similares?¿Tenés un proyecto en mente y crees que puedo ayudarte?</h2>
+</section>	
+<section class="formulario">
+		<form action="enviar.php" method="POST" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Te invito un café!</legend>	
+				<div id="fNombre">
+					<label for="Nombre">Nombre</label>
+						<input type="text" name="Nombre" maxlength="60">
+	
+					<label for="Apellido">Apellido</label>
+						<input type="text" name="Apellido" maxlength="60">
+				</div>
+					<label for="Email">Email</label>
+					<input type="Email" name="Email" maxlength="100">
+		
+					<label for="Celular">Teléfono</label>
+					<input type="text" name="Teléfono" maxlength="50">
+	
+		<p class="fFuente">Selecciona motivo de contacto:</p>
+		<Select name="Motivos">
+			<option value="Networking">Quiero conocerte!</option>
+			<option value="Proyecto">Tengo una idea/proyecto</option>
+			<option value="Conocido">Nos conocimos en persona</option>
+			<option value="Tomar café">Solo quiero charlar y café</option>
+			<option value="Otro">Otro</option>
+		</Select>
+
+		<div class="fFuente">
+		<p class="fFuente">Quiero ser contactado por:</p>
+		<label>Email</label>
+		<input type="radio" name="Contactado" value="Email">
+		<label>WhatsApp</label>
+		<input type="radio" name="Contactado" value="Teléfono">
+		<label>Sin preferencia</label>
+		<input type="radio" name="Contactado" value="Sin preferencia">
+		</div>
+
+	<div class="fFuente">
+		<Textarea name="MensajeOpcional" rows="5" col="100">Mensaje opcional</Textarea> 
+		<!--Seguir jugando con este textarea, no termina de convencer-->
+	</div>
+	<div class="fFuente">
+		<label>En la segunda reunión el café corre por mi cuenta</label>
+		<input type="checkbox" name="AutorIndependiente" value="1">
+	</div>
+	<div id="fBoton">	
+		<input class="Enviar" type="submit" name="Submit" value="Enviar">
+		<input class="Borrar" type="reset" name="Reset" value="Borrar contenido">
+	</div>
+	</fieldset>
+	</form>
+</section>
+</body>
+
+</html>
