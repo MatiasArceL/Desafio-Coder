@@ -12,7 +12,7 @@ header {
 	flex-wrap: nowrap;
 	align-content: space-around;
 	justify-content: flex-end;
-	background: linear-gradient(to bottom, #83a4d4, #b6fbff)
+	/*background: linear-gradient(to bottom, #83a4d4, #b6fbff)*/
 }
 
 nav ul li	{
