@@ -95,7 +95,7 @@ footer	{
 
 
 /* Botones de navegación */
-.volver {
+.botonNav {
 	border: none;
 	min-width: 100px;
 	height: 30px;
@@ -111,7 +111,7 @@ footer	{
 
 }
 
-.volver:hover {
+.botonNav:hover {
 	background-color: #1B1881;
 	text-decoration: none;
 }
