@@ -120,14 +120,16 @@ footer	{
 
 form{
 	width: 50%;
+	background-color: #ccccc3;
+	padding: 0.25rem;
+	border-radius: 0.3rem;
 }
 
 
 .formulario {
+	width: 100%;
 	font-size: 13px;
 	font-weight: bold;
-	line-height: 1.2;
-	margin: 50px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	margin-left: 50px;
@@ -135,6 +137,11 @@ form{
 	text-align: center;
 	display: flex;
 	justify-content: center;
+}
+
+legend {
+	width: 20%;
+	font-size: 15px;
 }
 
 #fNombre {
