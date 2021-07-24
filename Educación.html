@@ -7,19 +7,25 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<!-- Animación script Aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <!---->
 <body>
 	<header>
-		<nav>
-			<ul> 
+		<div class="logo">
+			<a href="index.html">
+				<img src="/Imagenes/Logo.JPG" alt="Logo Matías Arce Lee">
+			</a>
+		</div>	
+			<ul class="navigation"> 
 			  <li><a class="botonNav" href="index.html">Inicio</a></li>
-              <li><a class="botonNav" href="Experiencia.html">Experiencia<a></li>
+              <li><a class="botonNav" href="Experiencia.html">Experiencia</a></li>
               <li><a class="botonNav" href="Educación.html">Educación</a></li>
               <li><a class="botonNav" href="Portafolio.html">Portafolio</a></li>
               <li><a class="botonNav" href="Contacto.html">Contacto</a></li>
 			</ul>
-		</nav>
 	</header>
 	<!--Título de Sección Web-->
 	<section class="inicio">
@@ -35,7 +41,7 @@
 	
 	<!--Universidad-->	
 	<section>
-		<div class="encabezado">
+		<div class="encabezado" data-aos="fade-right" data-aos-duration="600" data-aos-once="true">
 			<p>
 				Universidad de San Andrés
 			</p>
@@ -47,13 +53,13 @@
 
 	<section class="gridEducacion">
 		
-		<div>
+		<div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
 			<p class="textoEducacion">
 				Mi <i>alma mater</i> donde cursé la carrera Administración de Empresas. Inspirado por mis tíos y apoyado por mi familia decidí aceptar el desafío de iniciar mi etapa universitaria en esta casa de estudios. Luego de realizar el curso de ingreso, me fue concedido 50% de asistencia financiera. No solo aprendí cuestiones inherentes a la carrera, sino también a cómo enfrentar mis miedos y debilidades. Varias instancias fueron construyendo el yo de ahora.
 			</p>
 		</div>
 		
-		<div>
+		<div data-aos="fade-left" data-aos-delay="500" data-aos-duration="900" data-aos-once="true">
 			<a href="https://udesa.edu.ar/">
 				<img id="Udesa" src="/Imagenes/UdeSA.jpg" alt="Logo de Universidad de San Andrés">
 			</a>
@@ -62,7 +68,7 @@
 	</section>
 	<!--Secundaria-->
 	<section>
-		<div class="encabezado">
+		<div class="encabezado" data-aos="fade-right" data-aos-duration="600" data-aos-once="true">
 			<p>
 				Escuela Superior de Comercio Carlos Pellegrini
 			</p>
@@ -74,18 +80,21 @@
 
 	<section class="gridEducacion">
 		<div>
-			<p class="textoEducacion">
+			<p class="textoEducacion" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
 				Escuela secundaria pública y pre-universitaria. Cuenta con la particularidad de requerir realizar un curso de ingreso por un año, los cupos son limitados, por lo que para ser admitido se debe reunir un puntaje con los examenes. El curso es idéntico y se hace a la par con los aspirantes al Colegio Nacional Buenos Aires. Existieron varias situaciones que me marcaron y me prepararon para los desafíos venideros.
 			</p>
 		</div>
 		
-		<div>
+		<div data-aos="fade-left" data-aos-delay="1000" data-aos-duration="900" data-aos-once="true">
 			<a href="http://www.cpel.uba.ar/">
 			<img id="ESCCP" src="/Imagenes/ESCCP.jpg" alt="Logo Escuela Superior de Comercio Carlos Pellegrini">
 			</a>
 		</div>
 	</section>
-	
+	<!-- Cierre script de animación Aos -->
+	<script>
+		AOS.init();
+ 	</script>
 </body>
 
 </html>
