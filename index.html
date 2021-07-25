@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="es"> 
+<html lang="es">
   <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matías Arce | Lic. Administración de Empresas</title>
+    <!--Llamada de CSS y fuente-->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- Animación script Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head> 
   <!---->
   <body>
@@ -16,26 +20,28 @@
           <img src="/Imagenes/Logo.JPG" alt="Logo Matías Arce Lee">
         </a>
       </div>	
+      <nav>
         <ul class="navigation"> 
           <li><a class="botonNav" href="index.html">Inicio</a></li>
-                <li><a class="botonNav" href="Experiencia.html">Experiencia</a></li>
-                <li><a class="botonNav" href="Educación.html">Educación</a></li>
-                <li><a class="botonNav" href="Portafolio.html">Portafolio</a></li>
-                <li><a class="botonNav" href="Contacto.html">Contacto</a></li>
-        </ul>
+          <li><a class="botonNav" href="Experiencia.html">Experiencia</a></li>
+          <li><a class="botonNav" href="Educación.html">Educación</a></li>
+          <li><a class="botonNav" href="Portafolio.html">Portafolio</a></li>
+          <li><a class="botonNav" href="Contacto.html">Contacto</a></li>
+          </ul>
+       </nav> 
     </header>
     <!-- Título de Sección Web + Foto -->
-    <section class="gridIndex">
-      <div>  
-        <h1 class="titulo">
-          Hola! Soy Matías D. Arce Lee
+    <section class="flex-container-inicio">
+      <div class="inicio">  
+        <h1 class="titulo" data-aos="fade-up" data-aos-once="true">
+        Hola! Soy Matías Arce Lee
         </h1>
-        <h2 class="subtitulo">
-          Lic. Administración de Empresas 
+        <h2 class="subtitulo" data-aos="fade-up" data-aos-delay="300" data-aos-once="true">
+        Lic. Administración de Empresas 
         </h2>
       </div>
-      <div>
-        <img id="FotoDePerfil"  src="imagenes/FotoDePerfil.jpg" alt="Matías Arce" style="width: 250px;height: 250px;">
+      <div class="fotoDePerfil" data-aos="fade-left" data-aos-delay="600" data-aos-once="true">
+        <img src="imagenes/FotoDePerfil.jpg" alt="Matías Arce" style="width: 250px;height: 250px;">
       </div> 
     </section>  
     <!-- Sobre Mi -->
@@ -55,9 +61,14 @@
     </section>  
     <!-- Falta terminar Footer -->
     <footer>
-    
+      <div>
+        <p>Footer</p>
+      </div>
     </footer>
-
+    <!-- Cierre script de animación Aos -->
+	  <script>
+		  AOS.init();
+ 	  </script>
   </body>
 
 </html>

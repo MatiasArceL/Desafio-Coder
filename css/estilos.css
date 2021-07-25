@@ -26,25 +26,27 @@ header {
 
 .navigation a {
 	display: block;
-	padding: 20px;
+	padding: 15px;
 	text-decoration: none;
 	font-weight: bold;
 }
 
-/*Cierre barra de navegación*/
+.flex-container-inicio {
+	display: flex;
+	align-content: space-around;
+	margin-top: 20px;
+	flex-wrap: nowrap;
+}
 
-#FotoDePerfil {
-	margin: 1px;
-	justify-items: right;
-	border: 1px solid black;
+.fotoDePerfil {
+	margin: 20px;
 }
 
 .inicio	{
-	display: flex;
-	flex-direction: column;
 	line-height:1.5;
 	margin: 15px;
 	margin-top: 20px;
+	margin-right: 500px;
 }
 
 #foto	{
@@ -68,8 +70,9 @@ header {
 }
 
 p	{
-	font-size: 18px;
+	font-size: 19px;
 	line-height: 1.2;
+	text-align: justify;
 }
 
 .educacion {
@@ -328,3 +331,12 @@ textarea{
 	justify-items: right;
 	transform: scale(1.2,1.2);
 }
+
+/* Footer */
+
+footer {
+	display: flex;
+	background-color: DarkSalmon;
+	color: white;
+	height: 100px;
+  }
