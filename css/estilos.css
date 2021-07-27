@@ -47,6 +47,7 @@ header {
 	margin: 15px;
 	margin-top: 20px;
 	margin-right: 500px;
+	margin-bottom: 40px;
 }
 
 #foto	{
@@ -73,14 +74,6 @@ p	{
 	font-size: 19px;
 	line-height: 1.2;
 	text-align: justify;
-}
-
-.educacion {
-	margin-top: 20px;
-	margin-bottom: 70px;
-	margin-left: 20px;
-	margin-right: 20px;
-
 }
 
 #SOBREMI	{
@@ -221,60 +214,52 @@ textarea{
 /* Página Educación */
 
 .encabezado {
-	margin-top: 40px;
+	padding-left: 80px;
 }
 
 .encabezado p {
-	margin-left: 100px;
 	font-weight: bold;
 	font-size: 23px;
 }
 
-.gridEducacion {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	
+.flexContainerEducacion {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding-bottom: 40px;
 }
 
-.gridEducacion div {
+.textoLogo {
+	display: flex;
+	flex-direction: row;
 	margin: 10px;
-	grid-template-areas: 
-	"a a a b b b ";
-	margin-right: 60px;
-	margin-left: 60px;
-	margin-bottom: 50px;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .textoEducacion {
-	grid-area: a;
+	padding: 10px;
+	width: 50%;
+}
+
+.textoEducacion p {
 	line-height: 1.6;
 }
 
 #Udesa {
 	width: 260px;
 	height: 180px;
-	grid-area: b;
-	justify-items: right;
 }
 
 #Udesa:hover {
 	transform: scale(1.2,1.2);
 }
 
-.gridIndex {
-	display: grid;
-	grid-template-columns: 1000px 100px;
-	line-height:1.5;
-	margin: 20px;
-	margin-top: 80px;
-}
 
 #ESCCP {
 	width: 170px;
 	height: 190px;
-	margin-left: 40px;
-	grid-area: b;
-	justify-items: right;
+	margin-right: 30px;
 	transform: scale(0.8,0.8);
 }
 
@@ -336,7 +321,17 @@ textarea{
 
 footer {
 	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 	background-color: DarkSalmon;
 	color: white;
-	height: 100px;
+	height: 80px;
   }
+
+.footer{
+	height: 40px;
+}
+
+.footerTexto {
+	font-size: 15px;
+}
