@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
-
+	
 }
 
 /*Barra de navegación*/
@@ -31,49 +31,68 @@ header {
 	font-weight: bold;
 }
 
-.flex-container-inicio {
+.flexContainerInicio {
 	display: flex;
-	align-content: space-around;
-	margin-top: 20px;
+	justify-content: space-between;
+	align-items: center;
 	flex-wrap: nowrap;
+	width: 80%;
+	margin: auto;
+	margin-top: 2.5rem;
 }
 
-.fotoDePerfil {
-	margin: 20px;
+#fotoDePerfil {
+	border-radius: 50px;
+	width: 18rem;
+	height: 18rem;
+	margin-right: 4rem;
 }
 
 .inicio {
 	line-height: 1.5;
 	margin: 15px;
 	margin-top: 20px;
-	margin-right: 500px;
 	margin-bottom: 40px;
-}
-
-#foto {
-	display: grid;
-	grid-template-columns: 50% 50% auto;
-	grid-row: 200px 700px auto;
-	line-height: 1.5;
-	margin: 15px;
 }
 
 .titulo {
 	font-size: 40px;
 	font-weight: bold;
-	justify-items: left;
 }
 
 .subtitulo {
 	font-size: 23px;
 	font-weight: bold;
-	justify-items: left;
 }
 
 p {
-	font-size: 19px;
+	font-size: 18px;
 	line-height: 1.2;
 	text-align: justify;
+	font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 1.2;
+	text-align: justify;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 1.2;
+	text-align: justify;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold
+}
+
+h5 {
+	font-size: 21px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold
 }
 
 #SOBREMI {
@@ -99,13 +118,14 @@ p {
 	margin-right: 20px;
 	margin-left: 20px;
 	border-radius: 80px;
-	transition: 0.8s ease all;
+	transition: 1s ease all;
 	color: black;
 	background: lightblue;
 }
 
 .botonNav:hover {
-	background-color: #1B1881;
+	background-color: #231eac;
+	color: blanchedalmond;
 }
 
 /* Página de Contacto */
@@ -216,7 +236,7 @@ textarea{
 	font-size: 23px;
 }
 
-.flexContainerEducacion {
+.flexContainer {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -227,6 +247,7 @@ textarea{
 	display: flex;
 	flex-direction: row;
 	margin: 10px;
+	padding-bottom: 30px;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -261,16 +282,17 @@ textarea{
 	transform: scale(1.05, 1.05);
 }
 
+/* Cards de cursos */
+
 .containerSeparador {
 	text-align: center;
 	text-transform: uppercase;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	padding: 30px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 80%;
 }
 
 .flexContainerCards {
@@ -280,14 +302,12 @@ textarea{
 	justify-content: space-evenly;
 	align-items: flex-start;
 	height: 800px;
-	width: 1000px;
+	width: 70%;
 	margin: auto;
 	margin-bottom: 100px;
-	border: 1px solid black;
 }
 
 .containerCards {
-	border: 1px solid black;
 	width: 280px;
 	height: 355px;
 	border-radius: 8px;
@@ -322,34 +342,18 @@ textarea{
 
 /* Página Experiencia */
 
-.gridExperiencia {
-	display: grid;
-	grid-template-columns: 1000px 100px;
-	line-height: 1.5;
-	margin: 15px;
-	margin-top: 10px;
-
-}
-
-.gridExperiencia div {
-	margin: 10px;
-	grid-gap: 2px;
-	grid-template-areas:
-		"a a a b b b ";
-	margin-right: 65px;
-	margin-left: 65px;
-	margin-bottom: 50px;
-}
-
 .textoExperiencia {
-	grid-area: a;
+	padding: 10px;
+	width: 50%;
+}
+
+.textoExperiencia p {
 	line-height: 1.6;
 }
 
 #PwC {
 	width: 200px;
 	height: 190px;
-	grid-area: b;
 	justify-items: right;
 	transform: scale(1.2, 1.2);
 }
@@ -357,7 +361,6 @@ textarea{
 #Avon {
 	width: 180px;
 	height: 170px;
-	grid-area: b;
 	justify-items: right;
 	transform: scale(1.2, 1.2);
 }
@@ -365,7 +368,6 @@ textarea{
 #KPMG {
 	width: 180px;
 	height: 150px;
-	grid-area: b;
 	justify-items: right;
 	transform: scale(1.2, 1.2);
 }
@@ -375,16 +377,39 @@ textarea{
 footer {
 	display: flex;
 	justify-content: center;
-	align-items: flex-end;
-	background-color: DarkSalmon;
-	color: white;
-	height: 80px;
+	align-items: center;
+	background-color: rgb(168, 185, 209);
+	color: blanchedalmond;
+	height: 10rem;
+	
 }
 
 .footer {
-	height: 40px;
+	height: 80%;
+	width: 100%;
+	margin: 20rem;
+}
+
+.iconos {
+	display: flex;
+	justify-content: center;
+}
+
+.iconoFooter {
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-bottom: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.copyright {
+	margin: auto;
+	align-items: center;
+
 }
 
 .footerTexto {
-	font-size: 15px;
+	font-size: 1rem;
+	text-align: center;
 }
