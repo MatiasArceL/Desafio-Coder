@@ -329,6 +329,7 @@ textarea{
 	margin: 1rem;
 	border-radius: 8px;
 	transition: all 0.30s;
+	cursor: pointer;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
 }
 
