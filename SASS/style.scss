@@ -1,0 +1,76 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        width: 60%;
+        margin: 20px;
+    }
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+.flex-container-inicio {
+    display: flex;
+    align-content: space-around;
+    margin-top: 20px;  
+    flex-wrap: nowrap;
+    .inicio {
+        line-height:1.5;
+        margin: 15px;
+        margin-top: 20px;
+        margin-right: 500px;    
+    }
+        .titulo {
+            font-size: 40px;
+            font-weight: bold;
+            justify-items: left;
+        }
+            .subtitulo{
+                font-size: 23px;
+                font-weight: bold;
+                justify-items: left;
+            }
+            .fotoDePerfil {
+                margin: 20px;
+            }
+
+}  
+
+#SOBREMI {
+    font-size: 18px;
+	line-height: 100px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 80px;
+	list-style-type: none;
+    .sobremi ul {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: bold;
+        text-align: center;
+        list-style: none;
+    }
+}
+
+.botonNav {
+	border: none;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-radius: 80px;
+	transition: 0.8s ease all;
+	color: black;
+	background: lightblue;
+}   .botonNav:hover {
+	background-color: #1B1881;
+}
+
