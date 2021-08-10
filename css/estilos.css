@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
 	font-size: 62.5%;
-	
 }
 
 /*Barra de navegación*/
@@ -15,9 +14,30 @@ header {
 	align-items: center;
 }
 
-.logo {
-	width: 60%;
-	margin: 20px;
+header #logoInicio a {
+	margin-top: 2rem;
+	font-family: 'Georama', sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+header #logoInicio a p {
+	font-size: 4rem;
+	margin-left: 2rem;
+	padding-left: 2rem;
+}
+
+header .logo a {
+	margin-top: 2rem;
+	font-family: 'Georama', sans-serif;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+header .logo a p {
+	font-size: 4rem;
+	margin-left: 2rem;
+	padding-left: 2rem;
 }
 
 .navigation {
@@ -37,22 +57,14 @@ header {
 	width: 100%;
 	height: 100vh;
 	position: absolute;
+	top: 0;
+	z-index: -1;
 	overflow: hidden;
 }
 
 .videoInicio video {
 	min-width: 100%;
 	min-height: 100%;
-}
-
-.overlay {
-	height: 100vh;
-	width: 100vw;
-	position: absolute;
-
-	background: rgba(113, 76, 182, 0.315);
-	z-index: 1;
-	opacity: 0.20;
 }
 
 .flexContainerInicio {
@@ -63,15 +75,12 @@ header {
 	flex-wrap: nowrap;
 	width: 80%;
 	margin: auto;
-	margin-top: 2rem;
-	margin-bottom: 8rem;
 }
 
 #fotoDePerfil {
 	border-radius: 30px;
 	width: 22rem;
 	height: 22rem;
-	margin-right: 2rem;
 }
 
 .textoPresentacion {
@@ -109,7 +118,9 @@ header {
 }
 
 .flexPregunta {
-	margin: 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 p {
@@ -127,11 +138,16 @@ h3 {
 	font-weight: bold;
 }
 
+.divPregunta {
+	margin-bottom: 8rem;
+	margin-right: 3.5rem;
+	margin-left: 3.5rem;
+}
+
 .indexPregunta {
 	font-size: 3rem;
 	text-align: center;
-	margin-bottom: 5rem;
-	margin-top: 5rem;
+	margin-bottom: 2rem;
 }
 
 #cursos {
@@ -156,34 +172,47 @@ h5 {
 	font-weight: bold
 }
 
-#SOBREMI {
-	font-size: 18px;
-	line-height: 100px;
-	font-weight: bold;
-	text-align: center;
-	margin-top: 80px;
-	list-style-type: none;
-}
-
-.sobremi ul {
-	font-size: 18px;
-	line-height: 1.5;
-	font-weight: bold;
-	text-align: center;
-	list-style: none;
-}
-
 span {
 	font-size: 1.7rem;
 	font-style: italic;
 }
 
+.botonCV {
+	width: 50%;
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+	text-align: center;
+	margin: 1rem;
+	padding-bottom: 5rem;
+}
+
+.botonCV a {
+	display: inline-block;
+	text-decoration: none;
+	border: none;
+	border-radius: 13px;
+	padding: 1rem;
+	transition: 0.3s ease all;
+	color: black;
+	background: #7f8cbe;
+	border: 2px solid #3756dd;
+}
+
+.botonCV a:hover {
+	background-color: #3756dd;
+	color: blanchedalmond;
+	transform: translateY(-0.5rem);
+	border: 2px solid black;
+}
+
 /* Botones de navegación */
 .botonNav {
 	border: none;
+	margin-top: 2rem;
 	margin-right: 20px;
 	margin-left: 20px;
-	border-radius: 80px;
+	border-radius: 20px;
 	transition: 0.4s ease all;
 	color: black;
 	background: lightblue;
@@ -436,6 +465,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	background: linear-gradient(to left, #614385, #516395);
+	/*Kashmir Gradient*/
 	/*background-color: rgb(168, 185, 209);*/
 	color: rgba(255, 255, 255, 0.774);
 	
