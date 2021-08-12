@@ -6,8 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contáctame | Matías Arce</title>
 	<link rel="stylesheet" href="CSS/estilos.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!--Llamada de CSS y fuentes-->
+	<link rel="stylesheet" href="CSS/estilos.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Georama:wght@700&display=swap" rel="stylesheet">
 	<!--Favicon-->
 	<link rel="apple-touch-icon" sizes="180x180" href="Imagenes/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="Imagenes/favicon-32x32.png">
@@ -37,60 +42,27 @@
 			que puedo ayudarte?</h2>
 	</section>
 
-	<section class="formulario">
-		<form action="enviar.php" method="POST" enctype="multipart/form-data">
-			<fieldset>
-				<legend> Te invito un café! </legend>
-				<div id="fNombre">
-					<label for="Nombre">Nombre</label>
-					<input type="text" name="Nombre" maxlength="60">
+	<form action="enviar.php" method="POST" enctype="multipart/form-data">
+		<h3>Te invito un café!</h3>
+			<input type="text" name="Nombre" placeholder="Nombre y Apellido" maxlength="80">
+			<input type="Email" name="Email" placeholder="Email" maxlength="80">
+			<input type="text" name="Teléfono" placeholder="Teléfono (Opcional)" maxlength="50">
+		
+			<label>Selecciona motivo de contacto:</label>
+			<select aria-label="Default select example">
+				<option value="Networking">Quiero conocerte!</option>
+				<option value="Proyecto">Tengo una idea/proyecto</option>
+				<option value="Conocido">Nos conocimos en persona</option>
+				<option value="Tomar café">Solo quiero charlar y café</option>
+				<option value="Otro">Otro</option>
+			</select>
+			<textarea placeholder="Mensaje opcional (Enter para salto de línea)"></textarea>
+	
+		<div id="botonEnviar">
+			<input class="enviar" type="submit" value="Enviar">
+		</div>
+	</form>
 
-					<label for="Apellido">Apellido</label>
-					<input type="text" name="Apellido" maxlength="60">
-				</div>
-
-				<div id="fNombre">
-					<label for="Email">Email</label>
-					<input type="Email" name="Email" maxlength="100">
-
-					<label for="Celular">Teléfono</label>
-					<input type="text" name="Teléfono" maxlength="50">
-				</div>
-
-				<p class="fFuente">Selecciona motivo de contacto:</p>
-				<Select class="form-select" aria-label="Default select example">
-					<option value="Networking">Quiero conocerte!</option>
-					<option value="Proyecto">Tengo una idea/proyecto</option>
-					<option value="Conocido">Nos conocimos en persona</option>
-					<option value="Tomar café">Solo quiero charlar y café</option>
-					<option value="Otro">Otro</option>
-				</Select>
-
-				<div class="fFuente">
-					<p class="fFuente">Quiero ser contactado por:</p>
-					<label>Email</label>
-					<input class="form-check-input" type="radio" name="Contactado" value="Email">
-					<label>WhatsApp</label>
-					<input class="form-check-input" type="radio" name="Contactado" value="Teléfono">
-					<label>Sin preferencia</label>
-					<input class="form-check-input" type="radio" name="Contactado" value="Sin preferencia">
-				</div>
-
-				<div class="mensajeOpcional">
-					<Textarea name="MensajeOpcional" rows="5" col="100">Mensaje opcional</Textarea>
-				</div>
-
-				<div class="fFuente">
-					<label>En la segunda reunión el café corre por mi cuenta</label>
-					<input type="checkbox" name="AutorIndependiente" value="1">
-				</div>
-				<div id="fBoton">
-					<input class="Enviar" type="submit" name="Submit" value="Enviar">
-					<input class="Borrar" type="reset" name="Reset" value="Borrar contenido">
-				</div>
-			</fieldset>
-		</form>
-	</section>
 
 	<footer>
 		<section class="footer">
